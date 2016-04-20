@@ -16,4 +16,10 @@ Product::~Product() {
 
 }
 
+void Product::print() {
+
+	cin << mPlace.print() <<
+}
+
+
 
