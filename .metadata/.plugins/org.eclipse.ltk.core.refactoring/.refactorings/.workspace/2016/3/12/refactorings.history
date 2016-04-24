@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Matala1/src/Engine.h&apos;" deleteContents="false" description="Delete resource &apos;Matala1/src/Engine.h&apos;" element1="/Matala1/src/Engine.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1458159816318"/>
+</session>

@@ -1,0 +1,21 @@
+/*
+ * FarmProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef FARMPRODUCT_H_
+#define FARMPRODUCT_H_
+
+namespace std {
+
+class FarmProduct {
+public:
+	FarmProduct();
+	virtual ~FarmProduct();
+};
+
+} /* namespace std */
+
+#endif /* FARMPRODUCT_H_ */

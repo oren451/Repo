@@ -1,0 +1,24 @@
+#include "FarmProduct.h"
+
+FarmProduct::FarmProduct()
+{
+	mFarmType = Fruit;
+	mSuppliersAmount = 0;
+	mSeasonsNumber = 1;
+}
+
+FarmProduct::FarmProduct(char* name, int id, ShelfRow place, int weight,
+		ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+		, int seasonsnumber): Product
+{
+	mFarmType = farmtype;
+	mSeasonsNumber = seasonsnumber;
+	mSuppliersAmount = supplierNumber;
+}
+
+
+FarmProduct::~FarmProduct() {
+}
+
+int FarmProduct::calculatePrice() {
+}

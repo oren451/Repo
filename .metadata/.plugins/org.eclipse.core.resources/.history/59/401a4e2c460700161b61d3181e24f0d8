@@ -1,0 +1,15 @@
+/*
+ * FruitProduct.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "FruitProduct.h"
+
+public FruitProduct: public FarmProduct
+{
+
+}
+
+
+

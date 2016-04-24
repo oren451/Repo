@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="GetCurrentThread.CallThread"/>
+<fullyQualifiedTypeName name="GetCurrentThread.Caller"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="SingletonExample"/>
+<fullyQualifiedTypeName name="com.example.SingletonExample"/>
+<fullyQualifiedTypeName name="com.example.SingletonExample.SingletonEnum"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="com.atm.example.Factory"/>
+<fullyQualifiedTypeName name="com.atm.example.DetailedStatement"/>
+<fullyQualifiedTypeName name="com.atm.example.MiniStatement"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.atm.example.StatementFactory"/>
+<fullyQualifiedTypeName name="com.atm.example.StatementType"/>
+</qualifiedTypeNameHistroy>

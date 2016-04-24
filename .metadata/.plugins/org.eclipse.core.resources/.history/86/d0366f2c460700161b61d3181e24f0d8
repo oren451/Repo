@@ -1,0 +1,21 @@
+/*
+ * MilkProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef MILKPRODUCT_H_
+#define MILKPRODUCT_H_
+
+namespace std {
+
+class MilkProduct {
+public:
+	MilkProduct();
+	virtual ~MilkProduct();
+};
+
+} /* namespace std */
+
+#endif /* MILKPRODUCT_H_ */

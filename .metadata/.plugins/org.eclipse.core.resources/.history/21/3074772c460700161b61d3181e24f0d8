@@ -1,0 +1,21 @@
+/*
+ * MilkyCheeseProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef MILKYCHEESEPRODUCT_H_
+#define MILKYCHEESEPRODUCT_H_
+
+namespace std {
+
+class MilkyCheeseProduct {
+public:
+	MilkyCheeseProduct();
+	virtual ~MilkyCheeseProduct();
+};
+
+} /* namespace std */
+
+#endif /* MILKYCHEESEPRODUCT_H_ */

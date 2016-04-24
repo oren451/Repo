@@ -1,0 +1,21 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#include "Product.h"
+
+namespace std {
+
+Product::Product() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Product::~Product() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace std */

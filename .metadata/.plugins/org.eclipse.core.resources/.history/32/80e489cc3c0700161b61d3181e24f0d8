@@ -1,0 +1,18 @@
+/*
+ * FarmProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+#include "Product.h"
+using namespace std;
+
+public FarmProduct: public Product
+{
+
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+FarmProduct::FarmProduct()
+{
+	mFarmType = Fruit;
+	mSuppliersAmount = 0;
+	mSeasonsNumber = 1;
+}
+
+FarmProduct::FarmProduct(int supplierNumber,FarmType farmtype, int seasonsnumber)
+{
+	mFarmType = farmtype;
+	mSeasonsNumber = seasonsnumber;
+	mSuppliersAmount = supplierNumber;
+}
+
+
+FarmProduct::~FarmProduct() {
+}
+
+int FarmProduct::calculatePrice() {
+}

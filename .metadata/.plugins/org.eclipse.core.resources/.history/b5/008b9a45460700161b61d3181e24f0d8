@@ -1,0 +1,19 @@
+/*
+ * YogurtProduct.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#pragma once
+
+YogurtProduct::YogurtProduct() {
+	// TODO Auto-generated constructor stub
+
+}
+
+YogurtProduct::~YogurtProduct() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace std */

@@ -1,0 +1,21 @@
+/*
+ * PackageProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef PACKAGEPRODUCT_H_
+#define PACKAGEPRODUCT_H_
+
+namespace std {
+
+class PackageProduct {
+public:
+	PackageProduct();
+	virtual ~PackageProduct();
+};
+
+} /* namespace std */
+
+#endif /* PACKAGEPRODUCT_H_ */

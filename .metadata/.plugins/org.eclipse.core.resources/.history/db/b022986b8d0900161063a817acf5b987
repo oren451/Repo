@@ -1,0 +1,29 @@
+FarmProduct::FarmProduct()
+{
+	mFarmType = Fruit;
+	mSuppliersAmount = 0;
+	mSeasonsNumber = 1;
+}
+
+FarmProduct::FarmProduct(int supplierNumber,FarmType farmtype, int seasonsnumber):Product(char* name,
+		int id, ShelfRow place, int weight,ProductType type, ExposureValue exposure)
+{
+
+
+}
+
+
+
+
+FarmProduct::~FarmProduct() {
+}
+
+int FarmProduct::calculatePrice() {
+}
+/*
+ * FarmProduct.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+

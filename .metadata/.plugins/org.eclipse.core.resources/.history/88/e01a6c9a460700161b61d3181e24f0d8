@@ -1,0 +1,19 @@
+/*
+ * ShelfRow.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+using namespace std;
+
+class ShelfRow {
+public:
+	ShelfRow();
+	virtual ~ShelfRow();
+};
+
+} /* namespace std */
+
+#pragma once

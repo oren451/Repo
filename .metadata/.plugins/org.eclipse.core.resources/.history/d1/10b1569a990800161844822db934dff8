@@ -1,0 +1,20 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "Product.h"
+
+Product::Product()
+{
+	mId = 0; //Static member to be unique
+	mName "DefaultName";
+	mPlace = new ShelfRow()
+
+}
+
+
+
+
+

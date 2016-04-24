@@ -1,0 +1,20 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "Product.h"
+#include "string.h"
+
+Product::Product()
+{
+	mId = 0; //Static member to be unique
+	strcpy(mName,"DefaultName");
+	mPlace();
+}
+
+
+
+
+

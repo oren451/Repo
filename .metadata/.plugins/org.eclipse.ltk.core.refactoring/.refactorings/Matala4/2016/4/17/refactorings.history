@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;FruitProduct.h&apos; to &apos;Matala4&apos;" description="Move &apos;FruitProduct.h&apos; to &apos;Matala4&apos;" destination="/Matala4" element1="src/FruitProduct.h" element10="src/ShelfRow.cpp" element11="src/ShelfRow.h" element12="src/Store.h" element13="src/VegetableProduct.h" element2="src/MilkProduct.h" element3="src/MilkyCheeseProduct.h" element4="src/MilkyDrinkProduct.h" element5="src/MilkyYogurtProduct.h" element6="src/NonMilkyProduct.h" element7="src/PackageProduct.h" element8="src/Product.cpp" element9="src/Product.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="13" stamp="1461188163410" updateReferences="true"/>
+</session>

@@ -1,0 +1,30 @@
+23:46:52 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+make: *** [src/FruitProduct.o] Error 1
+
+23:46:52 Build Finished (took 424ms)
+

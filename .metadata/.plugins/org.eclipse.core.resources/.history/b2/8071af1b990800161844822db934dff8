@@ -1,0 +1,19 @@
+/*
+ * ShelfRow.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+using namespace std;
+
+ShelfRow::ShelfRow() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ShelfRow::~ShelfRow() {
+	// TODO Auto-generated destructor stub
+}
+
+

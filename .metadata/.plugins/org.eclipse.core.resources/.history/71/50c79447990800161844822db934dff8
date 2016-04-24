@@ -1,0 +1,19 @@
+/*
+ * ShelfRow.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "ShelfRow.h"
+
+ShelfRow::ShelfRow() {
+
+	mRow = 'A';
+	mShelf = 1;
+}
+
+ShelfRow::~ShelfRow() {
+	// TODO Auto-generated destructor stub
+}
+
+

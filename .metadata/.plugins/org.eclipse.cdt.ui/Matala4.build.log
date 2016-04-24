@@ -1,0 +1,40 @@
+23:46:51 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+
+23:46:51 Build Finished (took 70ms)
+

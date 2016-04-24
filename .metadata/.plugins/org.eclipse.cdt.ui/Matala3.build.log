@@ -1,0 +1,63 @@
+23:23:49 **** Incremental Build of configuration Debug for project Matala3 ****
+make all 
+Building file: ../src/Game.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Game.d" -MT"src/Game.d" -o "src/Game.o" "../src/Game.cpp"
+Finished building: ../src/Game.cpp
+ 
+Building file: ../src/NumSet.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NumSet.d" -MT"src/NumSet.d" -o "src/NumSet.o" "../src/NumSet.cpp"
+../src/NumSet.cpp: In member function ‘NumSet& NumSet::operator+=(int)’:
+../src/NumSet.cpp:144:9: error: invalid initialization of non-const reference of type ‘NumSet&’ from an rvalue of type ‘NumSet*’
+  return this;
+         ^
+../src/NumSet.cpp: In member function ‘NumSet NumSet::operator+=(NumSet)’:
+../src/NumSet.cpp:153:9: error: could not convert ‘(NumSet*)this’ from ‘NumSet*’ to ‘NumSet’
+  return this;
+         ^
+../src/NumSet.cpp: In member function ‘NumSet& NumSet::operator++()’:
+../src/NumSet.cpp:159:16: warning: value computed is not used [-Wunused-value]
+   *_mArray[i]++;
+                ^
+../src/NumSet.cpp: In member function ‘NumSet& NumSet::operator--()’:
+../src/NumSet.cpp:168:16: warning: value computed is not used [-Wunused-value]
+   *_mArray[i]--;
+                ^
+../src/NumSet.cpp: In function ‘std::istream& operator>>(std::istream&, NumSet)’:
+../src/NumSet.cpp:210:6: error: ambiguous overload for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘const int’)
+   in >> numSet.getArray()[i];
+      ^
+../src/NumSet.cpp:210:6: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:40:0,
+                 from ../src/NumSet.h:10,
+                 from ../src/NumSet.cpp:8:
+/usr/include/c++/4.9/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.9/istream:120:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.9/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>] <near match>
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/istream:124:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+src/subdir.mk:24: recipe for target 'src/NumSet.o' failed
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.9/istream:131:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>] <near match>
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.9/istream:259:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+../src/NumSet.cpp: In member function ‘NumSet& NumSet::operator+=(int)’:
+../src/NumSet.cpp:145:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/NumSet.cpp: In member function ‘NumSet NumSet::operator+=(NumSet)’:
+../src/NumSet.cpp:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/NumSet.o] Error 1
+
+23:23:49 Build Finished (took 670ms)
+

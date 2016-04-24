@@ -1,0 +1,29 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Apr 20, 2016
+ *      Author: orenk
+ */
+
+#include "Product.h"
+
+using namespace std;
+
+Product::Product() {
+}
+
+Product::~Product() {
+
+}
+
+Product::Product(char* name, int id, ShelfRow place, int weight,
+		ProductType type, ExposureValue exposure) {
+}
+
+void Product::print() {
+
+	cin << "a" << endl;
+}
+
+
+

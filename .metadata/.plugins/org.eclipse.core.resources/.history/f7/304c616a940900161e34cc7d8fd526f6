@@ -1,0 +1,24 @@
+/*
+ * FruitProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+using namespace std;
+
+class FruitProduct: public FarmProduct {
+
+private:
+	int sugarAmount;
+
+public:
+	FruitProduct();
+	FruitProduct();
+	virtual ~FruitProduct();
+	virtual int calculatePrice();
+	virtual void print();
+
+};
+

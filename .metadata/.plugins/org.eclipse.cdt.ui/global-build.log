@@ -1,0 +1,1933 @@
+00:59:59 **** Clean-only build of configuration Debug for project Matala4 ****
+make clean 
+rm -rf  ./FarmProduct.o ./Product.o ./ShelfRow.o  ./FarmProduct.d ./Product.d ./ShelfRow.d  Matala4
+ 
+00:59:59 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../FarmProduct.cpp:16:12: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  mFarmType = NULL;
+            ^
+../FarmProduct.cpp: In member function ‘virtual void FarmProduct::print()’:
+../FarmProduct.cpp:34:6: error: no match for ‘operator<<’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘void’)
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+      ^
+../FarmProduct.cpp:34:6: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+subdir.mk:24: recipe for target 'FarmProduct.o' failed
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from ../FarmProduct.h:9:0,
+                 from ../FarmProduct.cpp:8:
+../Product.h: At global scope:
+../Product.h:17:20: warning: ‘PODUCTTYPE’ defined but not used [-Wunused-variable]
+ static ProductType PODUCTTYPE;
+                    ^
+../Product.h:18:22: warning: ‘EXPOSURE_VALUE’ defined but not used [-Wunused-variable]
+ static ExposureValue EXPOSURE_VALUE;
+                      ^
+make: *** [FarmProduct.o] Error 1
+01:02:32 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I"/home/orenk/ProductionCode/Repo/Matala4" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../FarmProduct.cpp:16:12: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  mFarmType = NULL;
+            ^
+../FarmProduct.cpp: In member function ‘virtual void FarmProduct::print()’:
+../FarmProduct.cpp:34:6: error: no match for ‘operator<<’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘void’)
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+      ^
+../FarmProduct.cpp:34:6: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+subdir.mk:24: recipe for target 'FarmProduct.o' failed
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from ../FarmProduct.h:9:0,
+                 from ../FarmProduct.cpp:8:
+../Product.h: At global scope:
+../Product.h:17:20: warning: ‘PODUCTTYPE’ defined but not used [-Wunused-variable]
+ static ProductType PODUCTTYPE;
+                    ^
+../Product.h:18:22: warning: ‘EXPOSURE_VALUE’ defined but not used [-Wunused-variable]
+ static ExposureValue EXPOSURE_VALUE;
+                      ^
+make: *** [FarmProduct.o] Error 1
+01:03:33 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../FarmProduct.cpp:16:12: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  mFarmType = NULL;
+            ^
+../FarmProduct.cpp: In member function ‘virtual void FarmProduct::print()’:
+../FarmProduct.cpp:34:6: error: no match for ‘operator<<’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘void’)
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+      ^
+../FarmProduct.cpp:34:6: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+subdir.mk:24: recipe for target 'FarmProduct.o' failed
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from ../FarmProduct.h:9:0,
+                 from ../FarmProduct.cpp:8:
+../Product.h: At global scope:
+../Product.h:17:20: warning: ‘PODUCTTYPE’ defined but not used [-Wunused-variable]
+ static ProductType PODUCTTYPE;
+                    ^
+../Product.h:18:22: warning: ‘EXPOSURE_VALUE’ defined but not used [-Wunused-variable]
+ static ExposureValue EXPOSURE_VALUE;
+                      ^
+make: *** [FarmProduct.o] Error 1
+01:04:15 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../FarmProduct.cpp:16:12: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  mFarmType = NULL;
+            ^
+../FarmProduct.cpp: In member function ‘virtual void FarmProduct::print()’:
+../FarmProduct.cpp:34:6: error: no match for ‘operator<<’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘void’)
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+      ^
+../FarmProduct.cpp:34:6: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+subdir.mk:24: recipe for target 'FarmProduct.o' failed
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../FarmProduct.h:8,
+                 from ../FarmProduct.cpp:8:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+../FarmProduct.cpp:34:24: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+  cin << Product::print() << " " << mName << " (" << mFarmType <<
+                        ^
+In file included from ../FarmProduct.h:9:0,
+                 from ../FarmProduct.cpp:8:
+../Product.h: At global scope:
+../Product.h:17:20: warning: ‘PODUCTTYPE’ defined but not used [-Wunused-variable]
+ static ProductType PODUCTTYPE;
+                    ^
+../Product.h:18:22: warning: ‘EXPOSURE_VALUE’ defined but not used [-Wunused-variable]
+ static ExposureValue EXPOSURE_VALUE;
+                      ^
+make: *** [FarmProduct.o] Error 1
+17:38:09 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+17:38:11 **** Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp:8:9: warning: #pragma once in main file
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+ #pragma once
+         ^
+../src/FarmProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FarmProduct.o] Error 1
+17:39:48 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+make: *** [FarmProduct.o] Error 1
+17:39:48 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FarmProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+make: *** [src/FarmProduct.o] Error 1
+17:42:48 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+17:42:49 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+17:50:30 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+17:50:31 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+18:06:35 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+18:06:36 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+18:09:48 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+18:09:48 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+22:40:06 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+22:40:08 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+22:54:41 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+22:54:42 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp:1:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::FarmProduct(): Product() {
+ ^
+../src/FarmProduct.cpp:8:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::FarmProduct(int supplierNumber,FarmType farmtype, int seasonsnumber):Product(char* name,
+ ^
+../src/FarmProduct.cpp:17:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::~FarmProduct() {
+ ^
+../src/FarmProduct.cpp:20:5: error: ‘FarmProduct’ has not been declared
+ int FarmProduct::calculatePrice() {
+     ^
+../src/FarmProduct.cpp: In function ‘int calculatePrice()’:
+../src/FarmProduct.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+make: *** [src/FarmProduct.o] Error 1
+23:27:59 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+23:28:01 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp:1:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::FarmProduct()
+ ^
+../src/FarmProduct.cpp:8:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::FarmProduct(int supplierNumber,FarmType farmtype, int seasonsnumber)
+ ^
+../src/FarmProduct.cpp:16:1: error: ‘FarmProduct’ does not name a type
+ FarmProduct::~FarmProduct() {
+ ^
+../src/FarmProduct.cpp:19:5: error: ‘FarmProduct’ has not been declared
+ int FarmProduct::calculatePrice() {
+     ^
+../src/FarmProduct.cpp: In function ‘int calculatePrice()’:
+../src/FarmProduct.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/FarmProduct.o] Error 1
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+23:29:00 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+23:29:00 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+In file included from ../src/FarmProduct.cpp:1:0:
+../src/FarmProduct.h:12:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../src/FarmProduct.cpp:3:30: error: class ‘FarmProduct’ does not have any field named ‘Product’
+ FarmProduct::FarmProduct() : Product()
+                              ^
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+make: *** [src/FarmProduct.o] Error 1
+23:29:21 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+23:29:22 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+In file included from ../src/FarmProduct.cpp:1:0:
+../src/FarmProduct.h:12:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FarmProduct.h: In constructor ‘FarmProduct::FarmProduct()’:
+../src/FarmProduct.h:19:17: error: class ‘FarmProduct’ does not have any field named ‘Product’
+  FarmProduct(): Product();
+                 ^
+../src/FarmProduct.h:19:25: error: expected ‘{’ at end of input
+  FarmProduct(): Product();
+                         ^
+../src/FarmProduct.cpp: At global scope:
+../src/FarmProduct.cpp:3:1: error: redefinition of ‘FarmProduct::FarmProduct()’
+ FarmProduct::FarmProduct() : Product()
+ ^
+In file included from ../src/FarmProduct.cpp:1:0:
+../src/FarmProduct.h:19:2: note: ‘FarmProduct::FarmProduct()’ previously defined here
+  FarmProduct(): Product();
+  ^
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+make: *** [src/FarmProduct.o] Error 1
+23:29:50 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+23:29:51 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+In file included from ../src/FarmProduct.cpp:1:0:
+../src/FarmProduct.h:12:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../src/FarmProduct.cpp:5:10: error: ‘Product’ was not declared in this scope
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+  Product();
+          ^
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:23:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/FarmProduct.o] Error 1
+23:32:31 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+23:32:31 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:32:53 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+make: *** [FarmProduct.o] Error 1
+23:32:53 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:33:00 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+make: *** [FarmProduct.o] Error 1
+23:33:01 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+In file included from ../src/FarmProduct.cpp:2:0:
+../src/FarmProduct.h:12:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FarmProduct.h:20:34: error: ‘ShelfRow’ has not been declared
+  FarmProduct(char* name, int id, ShelfRow place, int weight,
+                                  ^
+../src/FarmProduct.h:21:4: error: ‘ProductType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+    ^
+../src/FarmProduct.h:21:22: error: ‘ExposureValue’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+                      ^
+../src/FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct()’:
+../src/FarmProduct.cpp:4:29: error: class ‘FarmProduct’ does not have any field named ‘Product’
+ FarmProduct::FarmProduct(): Product()
+                             ^
+../src/FarmProduct.cpp: At global scope:
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+../src/FarmProduct.cpp:11:46: error: ‘ShelfRow’ has not been declared
+ FarmProduct::FarmProduct(char* name, int id, ShelfRow place, int weight,
+                                              ^
+../src/FarmProduct.cpp:12:3: error: ‘ProductType’ has not been declared
+   ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+   ^
+../src/FarmProduct.cpp:12:21: error: ‘ExposureValue’ has not been declared
+   ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+                     ^
+../src/FarmProduct.cpp: In constructor ‘FarmProduct::FarmProduct(char*, int, int, int, int, int, int, FarmType, int)’:
+../src/FarmProduct.cpp:13:25: error: class ‘FarmProduct’ does not have any field named ‘Product’
+   , int seasonsnumber): Product(name, id, place, weight, type, exposure)
+                         ^
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/FarmProduct.o] Error 1
+23:33:07 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+make: *** [FarmProduct.o] Error 1
+23:33:08 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp: In member function ‘virtual int FarmProduct::calculatePrice()’:
+../src/FarmProduct.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:38:29 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+make: *** [FarmProduct.o] Error 1
+23:38:29 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+../src/FarmProduct.cpp: In member function ‘virtual void FarmProduct::print()’:
+../src/FarmProduct.cpp:32:7: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘void’)
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+       ^
+../src/FarmProduct.cpp:32:7: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+src/subdir.mk:54: recipe for target 'src/FarmProduct.o' failed
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘char’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘char’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘signed char’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘unsigned char’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   mismatched types ‘const _CharT*’ and ‘void’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/ostream:612:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘const char*’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘const char*’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘const signed char*’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from ../src/FarmProduct.cpp:3:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+../src/FarmProduct.cpp:32:25: note:   cannot convert ‘((FarmProduct*)this)->FarmProduct::<anonymous>.Product::print()’ (type ‘void’) to type ‘const unsigned char*’
+  cout << Product::print() << " " << mName << " (" << mFarmType <<
+                         ^
+make: *** [src/FarmProduct.o] Error 1
+23:39:43 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+23:39:43 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:46:51 **** Incremental Build of configuration Debug for project Matala4 ****
+make all 
+Building file: ../FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/c++ -I/usr/include -I/home/orenk/ProductionCode/Repo/Matala4 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FarmProduct.d" -MT"FarmProduct.d" -o "FarmProduct.o" "../FarmProduct.cpp"
+../FarmProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:19:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:26:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:29:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../FarmProduct.cpp:13:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+../FarmProduct.cpp:20:2: error: ‘mSuppliersAmount’ does not name a type
+  mSuppliersAmount = supplierNumber;
+  ^
+../FarmProduct.cpp:21:2: error: ‘mFarmType’ does not name a type
+  mFarmType = farmtype;
+  ^
+../FarmProduct.cpp:22:2: error: ‘mSeasonsNumber’ does not name a type
+  mSeasonsNumber = seasonsnumber;
+  ^
+../FarmProduct.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [FarmProduct.o] Error 1
+subdir.mk:27: recipe for target 'FarmProduct.o' failed
+23:46:52 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:8:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:10:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:12:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:17:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/FruitProduct.cpp:15:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+make: *** [src/FruitProduct.o] Error 1

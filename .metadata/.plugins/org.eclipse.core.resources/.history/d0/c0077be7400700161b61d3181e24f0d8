@@ -1,0 +1,25 @@
+/*
+ * FarmProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+#include "Product.h"
+
+using namespace std;
+
+class FarmProduct: public Product {
+private:
+	int mSupplierNumber;
+	int mFarmType;
+	int mSeasonsNumber;
+
+public:
+	FarmProduct();
+	FarmProduct(int supplierNumber,int farmtype, int seasonsnumber);
+	virtual ~FarmProduct();
+	virtual int calculatePrice();
+	virtual void print();
+};

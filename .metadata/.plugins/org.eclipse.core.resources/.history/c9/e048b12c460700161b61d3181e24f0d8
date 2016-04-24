@@ -1,0 +1,21 @@
+/*
+ * VegtableProduct.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#include "VegtableProduct.h"
+
+namespace std {
+
+VegtableProduct::VegtableProduct() {
+	// TODO Auto-generated constructor stub
+
+}
+
+VegtableProduct::~VegtableProduct() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace std */

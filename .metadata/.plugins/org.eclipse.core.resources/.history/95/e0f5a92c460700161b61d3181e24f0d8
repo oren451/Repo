@@ -1,0 +1,21 @@
+/*
+ * Store.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef STORE_H_
+#define STORE_H_
+
+namespace std {
+
+class Store {
+public:
+	Store();
+	virtual ~Store();
+};
+
+} /* namespace std */
+
+#endif /* STORE_H_ */

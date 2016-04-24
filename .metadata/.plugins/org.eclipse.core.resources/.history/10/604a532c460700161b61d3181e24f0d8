@@ -1,0 +1,18 @@
+#pragma once
+#include "iostream"
+#include "stdio.h"
+using namespace std;
+
+class ShelfRow {
+
+private:
+	int mShelf;
+	char mRow;
+
+public:
+	ShelfRow();
+	ShelfRow(int shelf, char row);
+	virtual ~ShelfRow();
+	void print();
+};
+

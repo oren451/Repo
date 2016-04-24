@@ -1,0 +1,21 @@
+/*
+ * NonMilkyProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#pragma once
+#pragma once
+
+#pragma once
+
+class NonMilkyProduct {
+public:
+	NonMilkyProduct();
+	virtual ~NonMilkyProduct();
+};
+
+} /* namespace std */
+
+#pragma once

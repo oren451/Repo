@@ -1,0 +1,21 @@
+/*
+ * YogurtProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#ifndef YOGURTPRODUCT_H_
+#define YOGURTPRODUCT_H_
+
+namespace std {
+
+class YogurtProduct {
+public:
+	YogurtProduct();
+	virtual ~YogurtProduct();
+};
+
+} /* namespace std */
+
+#endif /* YOGURTPRODUCT_H_ */

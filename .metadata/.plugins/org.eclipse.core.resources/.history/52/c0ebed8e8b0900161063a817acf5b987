@@ -1,0 +1,19 @@
+/*
+ * FarmProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+class FarmProduct: public Product
+{
+
+public:
+	FarmProduct();
+	virtual ~FarmProduct();
+};
+
+} /* namespace std */
+
+#pragma once
