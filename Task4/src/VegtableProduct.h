@@ -5,10 +5,20 @@
  *      Author: orenk
  */
 #pragma once
-using namespace std;
-class VegtableProduct {
+
+class VegtableProduct: public FarmProduct {
+
+private:
+	int mVitaminAmount;
+
 public:
 	VegtableProduct();
-	virtual ~VegtableProduct();
+	VegtableProduct(char* name, int id, ShelfRow place, int weight,
+			ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+			,int seasonsnumber, int sugarAmount);
+	virtual ~FruitProduct();
+	virtual int calculatePrice();
+	virtual void print();
+
 };
 

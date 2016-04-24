@@ -6,16 +6,12 @@
  */
 
 #pragma once
-#pragma once
 
-#pragma once
 
-class MilkProduct {
+class MilkProduct: public Product {
 public:
 	MilkProduct();
 	virtual ~MilkProduct();
 };
 
-} /* namespace std */
 
-#pragma once

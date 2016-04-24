@@ -1,18 +1,27 @@
-/*
- * VegtableProduct.cpp
- *
- *  Created on: Apr 21, 2016
- *      Author: orenk
- */
+#include "VegtableProduct.h"
+#include "iostream"
 
-using namespace std;
+VegtableProduct::VegtableProduct() : FarmProduct() {
 
-VegtableProduct::VegtableProduct() {
-	// TODO Auto-generated constructor stub
+	mVitaminAmount = 0;
+}
 
+VegtableProduct::VegtableProduct(char* name, int id, ShelfRow place, int weight,
+		ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+		int seasonsnumber, int vitaminAmount) : FarmProduct(name, id, place, weight, type, exposure, supplierNumber, farmtype, seasonsnumber)
+{
+	mVitaminAmount = vitaminAmount;
 }
 
 VegtableProduct::~VegtableProduct() {
-	// TODO Auto-generated destructor stub
 }
 
+int VegtableProduct::calculatePrice() {
+	return FarmProduct::calculatePrice() + (mVitaminAmount * 2);;
+}
+
+void VegtableProduct::print() {
+
+	FarmProduct:print();
+	cout << " (" << mVitaminAmount << ") " << endl;
+}

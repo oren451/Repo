@@ -24,7 +24,7 @@ FarmProduct::~FarmProduct() {
 }
 
 int FarmProduct::calculatePrice() {
-	return (5 - mSeasonsNumber) + 5 * mSuppliersAmount + mFarmType;
+	return (5 - mSeasonsNumber) + (5 * mSuppliersAmount) + mFarmType;
 }
 
 void FarmProduct::print() {
