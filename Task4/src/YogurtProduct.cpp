@@ -1,19 +1,21 @@
-/*
- * YogurtProduct.cpp
- *
- *  Created on: Apr 21, 2016
- *      Author: orenk
- */
-
-using namespace std;
-
-YogurtProduct::YogurtProduct() {
-	// TODO Auto-generated constructor stub
-
+YogurtProduct::YogurtProduct(): MilkProduct() {
 }
 
 YogurtProduct::~YogurtProduct() {
-	// TODO Auto-generated destructor stub
 }
 
+YogurtProduct::YogurtProduct(char* name, int id, ShelfRow place,
+		int weight, ProductType type, ExposureValue exposure, int fat,
+		MilkType milktype, int colorcount)
+:MilkProduct(name, id, place, weight, type, exposure, fat, milktype,
+		colorcount)
+{
+}
 
+int YogurtProduct::calculatePrice() {
+	return MilkProduct::calculatePrice();
+}
+
+void YogurtProduct::print() {
+	MilkProduct::print();
+}

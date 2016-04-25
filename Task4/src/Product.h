@@ -13,7 +13,7 @@ enum ExposureValue { Low, Medium, High };
 
 class Product {
 
-protected:
+private:
 	int mId;
 	ShelfRow mPlace;
 	int mWeight;

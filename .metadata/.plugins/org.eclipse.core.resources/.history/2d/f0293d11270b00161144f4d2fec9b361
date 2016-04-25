@@ -1,0 +1,21 @@
+/*
+ * NonMilkyProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#pragma once
+
+class NonMilkyProduct: public MilkProduct {
+
+private:
+	int amountOfNonMilkAdditions;
+	char* nonMilkNames[];
+
+public:
+	NonMilkyProduct();
+		virtual ~NonMilkyProduct();
+	virtual int calculatePrice();
+	virtual void print();
+};

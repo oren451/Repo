@@ -2,6 +2,7 @@
 #include "Product.h"
 #include "iostream"
 
+using namespace std;
 
 PackageProduct::PackageProduct(): Product()
 {
@@ -10,8 +11,9 @@ PackageProduct::PackageProduct(): Product()
 	mProductsNamesList = {"Default"};
 }
 
-PackageProduct::PackageProduct(char* name, int id, ShelfRow place, int weight, ProductType type, ExposureValue exposure,
-		int amount, char* productNamesList, int colorcount):Product(id, place, weight, type, exposure)
+PackageProduct::PackageProduct(int id, ShelfRow place, int weight, ProductType type, ExposureValue exposure,
+		int amount, char* productNamesList, int colorcount)
+	:Product(id, place, weight, type, exposure)
 {
 	mAmount = amount;
 	mColorCount = colorcount;

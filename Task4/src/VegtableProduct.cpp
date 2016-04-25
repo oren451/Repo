@@ -1,8 +1,9 @@
 #include "VegtableProduct.h"
 #include "iostream"
 
-VegtableProduct::VegtableProduct() : FarmProduct() {
+using namespace std;
 
+VegtableProduct::VegtableProduct() : FarmProduct() {
 	mVitaminAmount = 0;
 }
 
@@ -17,11 +18,11 @@ VegtableProduct::~VegtableProduct() {
 }
 
 int VegtableProduct::calculatePrice() {
-	return FarmProduct::calculatePrice() + (mVitaminAmount * 2);;
+	return FarmProduct::calculatePrice() + (mVitaminAmount * 2);
 }
 
 void VegtableProduct::print() {
 
-	FarmProduct:print();
+	FarmProduct::print();
 	cout << " (" << mVitaminAmount << ") " << endl;
 }

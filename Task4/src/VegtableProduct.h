@@ -15,10 +15,9 @@ public:
 	VegtableProduct();
 	VegtableProduct(char* name, int id, ShelfRow place, int weight,
 			ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
-			,int seasonsnumber, int sugarAmount);
-	virtual ~FruitProduct();
+			,int seasonsnumber, int vitaminAmount);
+	virtual ~VegtableProduct();
 	virtual int calculatePrice();
 	virtual void print();
-
 };
 

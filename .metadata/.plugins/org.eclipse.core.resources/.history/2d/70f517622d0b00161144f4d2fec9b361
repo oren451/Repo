@@ -1,0 +1,40 @@
+/*
+ * Store.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+using namespace std;
+
+Store::Store() {
+	mFactor = 0;
+	mProductsAmount = 0;
+	mAllProductArray = NULL;
+	mStoreName = new char[7];
+	strcpy(mStoreName, "Default");
+}
+
+Store::~Store() {
+}
+
+Store::Store(char* storeName, int factor, int productsAmount,
+		Product* allProductArray[])
+{
+	mFactor = factor;
+	for(Product str = mAllProductArray;
+			str < mAllProductArray + (sizeof(mAllProductArray) / sizeof(*mAllProductArray)); ++str)
+	{
+		addProductToStore(&str);
+	}
+}
+
+void Store::addProductToStore(Product& product) {
+}
+
+int Store::calculateStoreValue() {
+}
+
+void Store::printStoreDetails() {
+}

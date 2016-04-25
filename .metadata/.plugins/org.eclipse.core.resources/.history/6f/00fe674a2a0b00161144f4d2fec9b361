@@ -1,0 +1,22 @@
+/*
+ * Store.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+
+class Store
+{
+private:
+	char* mStoreName;
+	int mFactor;
+	int mProductsAmount;
+	Product* mAllProductArray[];
+
+public:
+	Store();
+	virtual ~Store();
+};
+

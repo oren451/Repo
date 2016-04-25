@@ -1931,3 +1931,757 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src
  ^
 src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
 make: *** [src/FruitProduct.o] Error 1
+23:19:11 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+In file included from ../src/FruitProduct.cpp:1:0:
+../src/FruitProduct.h:9:40: error: expected class-name before ‘{’ token
+ class FruitProduct: public FarmProduct {
+                                        ^
+../src/FruitProduct.h:16:35: error: ‘ShelfRow’ has not been declared
+  FruitProduct(char* name, int id, ShelfRow place, int weight,
+                                   ^
+../src/FruitProduct.h:17:4: error: ‘ProductType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+    ^
+../src/FruitProduct.h:17:22: error: ‘ExposureValue’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+                      ^
+../src/FruitProduct.h:17:64: error: ‘FarmType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
+                                                                ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct()’:
+../src/FruitProduct.cpp:6:32: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+ FruitProduct::FruitProduct() : FarmProduct() {
+                                ^
+../src/FruitProduct.cpp: At global scope:
+../src/FruitProduct.cpp:10:48: error: ‘ShelfRow’ has not been declared
+ FruitProduct::FruitProduct(char* name, int id, ShelfRow place, int weight,
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+                                                ^
+../src/FruitProduct.cpp:11:3: error: ‘ProductType’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+   ^
+../src/FruitProduct.cpp:11:21: error: ‘ExposureValue’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+                     ^
+../src/FruitProduct.cpp:11:65: error: ‘FarmType’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+                                                                 ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct(char*, int, int, int, int, int, int, int, int, int)’:
+../src/FruitProduct.cpp:12:41: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+   int seasonsnumber, int sugarAmount) : FarmProduct(name, id, place, weight, type, exposure, supplierNumber, farmtype, seasonsnumber)
+                                         ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:21:9: error: ‘FarmProduct’ has not been declared
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+         ^
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:24:45 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+In file included from ../src/FruitProduct.cpp:1:0:
+../src/FruitProduct.h:11:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FruitProduct.h:18:35: error: ‘ShelfRow’ has not been declared
+  FruitProduct(char* name, int id, ShelfRow place, int weight,
+                                   ^
+../src/FruitProduct.h:19:4: error: ‘ProductType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype,
+    ^
+../src/FruitProduct.h:19:22: error: ‘ExposureValue’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype,
+                      ^
+../src/FruitProduct.h:19:64: error: ‘FarmType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype,
+                                                                ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct()’:
+../src/FruitProduct.cpp:6:32: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+ FruitProduct::FruitProduct() : FarmProduct() {
+                                ^
+../src/FruitProduct.cpp: At global scope:
+../src/FruitProduct.cpp:10:48: error: ‘ShelfRow’ has not been declared
+ FruitProduct::FruitProduct(char* name, int id, ShelfRow place, int weight,
+                                                ^
+../src/FruitProduct.cpp:11:3: error: ‘ProductType’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+   ^
+../src/FruitProduct.cpp:11:21: error: ‘ExposureValue’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+                     ^
+../src/FruitProduct.cpp:11:65: error: ‘FarmType’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+                                                                 ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct(char*, int, int, int, int, int, int, int, int, int)’:
+../src/FruitProduct.cpp:12:41: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+   int seasonsnumber, int sugarAmount) : FarmProduct(name, id, place, weight, type, exposure, supplierNumber, farmtype, seasonsnumber)
+                                         ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:21:9: error: ‘FarmProduct’ has not been declared
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+         ^
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+make: *** [src/FruitProduct.o] Error 1
+23:25:54 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+In file included from ../src/FruitProduct.cpp:1:0:
+../src/FruitProduct.h:12:1: error: expected class-name before ‘{’ token
+ {
+ ^
+../src/FruitProduct.h:20:64: error: ‘FarmType’ has not been declared
+    ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype,
+                                                                ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct()’:
+../src/FruitProduct.cpp:6:32: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+ FruitProduct::FruitProduct() : FarmProduct() {
+                                ^
+../src/FruitProduct.cpp: At global scope:
+../src/FruitProduct.cpp:11:65: error: ‘FarmType’ has not been declared
+   ProductType type, ExposureValue exposure, int supplierNumber, FarmType farmtype,
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+                                                                 ^
+../src/FruitProduct.cpp: In constructor ‘FruitProduct::FruitProduct(char*, int, ShelfRow, int, ProductType, ExposureValue, int, int, int, int)’:
+../src/FruitProduct.cpp:12:41: error: class ‘FruitProduct’ does not have any field named ‘FarmProduct’
+   int seasonsnumber, int sugarAmount) : FarmProduct(name, id, place, weight, type, exposure, supplierNumber, farmtype, seasonsnumber)
+                                         ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:21:9: error: ‘FarmProduct’ is not a class or namespace
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+         ^
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+../src/FruitProduct.cpp: In member function ‘virtual int FruitProduct::calculatePrice()’:
+../src/FruitProduct.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:26:11 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+Finished building: ../src/FruitProduct.cpp
+ 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+23:27:01 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:5:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::FruitProduct() : FarmProduct() {
+ ^
+../src/FruitProduct.cpp:9:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::FruitProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/FruitProduct.cpp:16:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::~FruitProduct() {
+ ^
+../src/FruitProduct.cpp:19:5: error: ‘FruitProduct’ has not been declared
+ int FruitProduct::calculatePrice() {
+     ^
+../src/FruitProduct.cpp: In function ‘int calculatePrice()’:
+../src/FruitProduct.cpp:20:9: error: ‘FarmProduct’ has not been declared
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+         ^
+../src/FruitProduct.cpp:20:42: error: ‘mSugarAmount’ was not declared in this scope
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+                                          ^
+../src/FruitProduct.cpp: At global scope:
+../src/FruitProduct.cpp:23:6: error: ‘FruitProduct’ has not been declared
+ void FruitProduct::print() {
+      ^
+../src/FruitProduct.cpp: In function ‘void print()’:
+../src/FruitProduct.cpp:26:18: error: ‘mSugarAmount’ was not declared in this scope
+  cout << " (" << mSugarAmount << ") " << endl;
+                  ^
+../src/FruitProduct.cpp:25:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+../src/FruitProduct.cpp: In function ‘int calculatePrice()’:
+../src/FruitProduct.cpp:21:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:27:11 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp:5:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::FruitProduct() : FarmProduct() {
+ ^
+../src/FruitProduct.cpp:9:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::FruitProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/FruitProduct.cpp:16:1: error: ‘FruitProduct’ does not name a type
+ FruitProduct::~FruitProduct() {
+ ^
+../src/FruitProduct.cpp:19:5: error: ‘FruitProduct’ has not been declared
+src/subdir.mk:54: recipe for target 'src/FruitProduct.o' failed
+ int FruitProduct::calculatePrice() {
+     ^
+../src/FruitProduct.cpp: In function ‘int calculatePrice()’:
+../src/FruitProduct.cpp:20:9: error: ‘FarmProduct’ has not been declared
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+         ^
+../src/FruitProduct.cpp:20:42: error: ‘mSugarAmount’ was not declared in this scope
+  return FarmProduct::calculatePrice() + (mSugarAmount / 2);
+                                          ^
+../src/FruitProduct.cpp: At global scope:
+../src/FruitProduct.cpp:23:6: error: ‘FruitProduct’ has not been declared
+ void FruitProduct::print() {
+      ^
+../src/FruitProduct.cpp: In function ‘void print()’:
+../src/FruitProduct.cpp:26:18: error: ‘mSugarAmount’ was not declared in this scope
+  cout << " (" << mSugarAmount << ") " << endl;
+                  ^
+../src/FruitProduct.cpp:25:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+../src/FruitProduct.cpp: In function ‘int calculatePrice()’:
+../src/FruitProduct.cpp:21:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/FruitProduct.o] Error 1
+23:27:55 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+Finished building: ../src/FruitProduct.cpp
+ 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+23:29:14 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+Finished building: ../src/FruitProduct.cpp
+ 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+23:30:44 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+23:30:48 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+make: *** [src/MilkProduct.o] Error 1
+23:32:17 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:17:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+../src/MilkProduct.cpp:30:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:32:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:32:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:32:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:35:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+23:32:34 **** Clean-only build of configuration Debug for project Task4 ****
+make clean 
+rm -rf  ./src/FarmProduct.o ./src/FruitProduct.o ./src/MilkProduct.o ./src/MilkyCheeseProduct.o ./src/MilkyDrinkProduct.o ./src/NonMilkyProduct.o ./src/PackageProduct.o ./src/Product.o ./src/ShelfRow.o ./src/Store.o ./src/Task4.o ./src/VegtableProduct.o ./src/YogurtProduct.o  ./src/FarmProduct.d ./src/FruitProduct.d ./src/MilkProduct.d ./src/MilkyCheeseProduct.d ./src/MilkyDrinkProduct.d ./src/NonMilkyProduct.d ./src/PackageProduct.d ./src/Product.d ./src/ShelfRow.d ./src/Store.d ./src/Task4.d ./src/VegtableProduct.d ./src/YogurtProduct.d  Task4
+ 
+23:56:29 **** Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+Finished building: ../src/FruitProduct.cpp
+ 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:23:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:34:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:36:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:36:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:36:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:39:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘void print()’:
+../src/MilkProduct.cpp:41:17: error: cannot call member function ‘virtual void Product::print()’ without object
+  Product::print();
+                 ^
+../src/MilkProduct.cpp:42:2: error: ‘cout’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+  ^
+../src/MilkProduct.cpp:42:10: error: ‘mName’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+          ^
+../src/MilkProduct.cpp:42:27: error: ‘mMilkType’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                           ^
+../src/MilkProduct.cpp:42:47: error: ‘mColorCount’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                               ^
+../src/MilkProduct.cpp:42:69: error: ‘mFat’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                     ^
+../src/MilkProduct.cpp:42:84: error: ‘endl’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                                    ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+00:07:00 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:23:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:34:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:36:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:36:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:36:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:39:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘void print()’:
+../src/MilkProduct.cpp:41:17: error: cannot call member function ‘virtual void Product::print()’ without object
+  Product::print();
+                 ^
+../src/MilkProduct.cpp:42:2: error: ‘cout’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+  ^
+../src/MilkProduct.cpp:42:10: error: ‘mName’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+          ^
+../src/MilkProduct.cpp:42:27: error: ‘mMilkType’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                           ^
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+../src/MilkProduct.cpp:42:47: error: ‘mColorCount’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                               ^
+../src/MilkProduct.cpp:42:69: error: ‘mFat’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                     ^
+../src/MilkProduct.cpp:42:84: error: ‘endl’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                                    ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+00:07:03 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+ ^
+../src/MilkProduct.cpp:23:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:34:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:36:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:36:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:36:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:39:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘void print()’:
+../src/MilkProduct.cpp:41:17: error: cannot call member function ‘virtual void Product::print()’ without object
+  Product::print();
+                 ^
+../src/MilkProduct.cpp:42:2: error: ‘cout’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+  ^
+../src/MilkProduct.cpp:42:10: error: ‘mName’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+          ^
+../src/MilkProduct.cpp:42:27: error: ‘mMilkType’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                           ^
+../src/MilkProduct.cpp:42:47: error: ‘mColorCount’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                               ^
+../src/MilkProduct.cpp:42:69: error: ‘mFat’ was not declared in this scope
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                     ^
+../src/MilkProduct.cpp:42:84: error: ‘endl’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                                    ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1
+00:08:13 **** Incremental Build of configuration Debug for project Task4 ****
+make all 
+Building file: ../src/FarmProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
+Finished building: ../src/FarmProduct.cpp
+ 
+Building file: ../src/FruitProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
+../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
+../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
+  FarmProduct:print();
+  ^
+Finished building: ../src/FruitProduct.cpp
+ 
+Building file: ../src/MilkProduct.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
+../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(): Product() {
+ ^
+../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::~MilkProduct() {
+src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
+ ^
+../src/MilkProduct.cpp:23:1: error: ‘MilkProduct’ does not name a type
+ MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
+ ^
+../src/MilkProduct.cpp:34:5: error: ‘MilkProduct’ is not a class or namespace
+ int MilkProduct::calculatePrice() {
+     ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:36:10: error: ‘mColorCount’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+          ^
+../src/MilkProduct.cpp:36:24: error: ‘mFat’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                        ^
+../src/MilkProduct.cpp:36:32: error: ‘mMilkType’ was not declared in this scope
+  return (mColorCount - mFat) * mMilkType;
+                                ^
+../src/MilkProduct.cpp: At global scope:
+../src/MilkProduct.cpp:39:6: error: ‘MilkProduct’ is not a class or namespace
+ void MilkProduct::print() {
+      ^
+../src/MilkProduct.cpp: In function ‘void print()’:
+../src/MilkProduct.cpp:41:17: error: cannot call member function ‘virtual void Product::print()’ without object
+  Product::print();
+                 ^
+../src/MilkProduct.cpp:42:2: error: ‘cout’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+  ^
+../src/MilkProduct.cpp:42:10: error: ‘mName’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+          ^
+../src/MilkProduct.cpp:42:27: error: ‘mMilkType’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                           ^
+../src/MilkProduct.cpp:42:47: error: ‘mColorCount’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                               ^
+../src/MilkProduct.cpp:42:69: error: ‘mFat’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                     ^
+../src/MilkProduct.cpp:42:84: error: ‘endl’ was not declared in this scope
+  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
+                                                                                    ^
+../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
+../src/MilkProduct.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MilkProduct.o] Error 1

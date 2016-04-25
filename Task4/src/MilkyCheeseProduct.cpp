@@ -7,12 +7,29 @@
 
 using namespace std;
 
-MilkyCheeseProduct::MilkyCheeseProduct() {
-	// TODO Auto-generated constructor stub
+MilkyCheeseProduct::MilkyCheeseProduct(): MilkProduct() {
 
+	mAddition = 0;
 }
 
 MilkyCheeseProduct::~MilkyCheeseProduct() {
-	// TODO Auto-generated destructor stub
 }
 
+MilkyCheeseProduct::MilkyCheeseProduct(char* name, int id, ShelfRow place,
+		int weight, ProductType type, ExposureValue exposure, int fat,
+		MilkType milktype, int colorcount, int addition)
+		:MilkProduct(name, id, place, weight, type, exposure, fat, milktype, colorcount)
+{
+	mAddition = addition;
+}
+
+int MilkyCheeseProduct::calculatePrice() {
+
+	return MilkProduct::calculatePrice() + mAddition;
+}
+
+void MilkyCheeseProduct::print() {
+
+	MilkProduct::print();
+	cout << " (" << mAddition << ")" << endl;
+}

@@ -1,0 +1,18 @@
+/*
+ * MilkyCheeseProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+
+class MilkyCheeseProduct: public MilkProduct {
+
+private:
+	int mAddition;
+public:
+	MilkyCheeseProduct();
+	virtual ~MilkyCheeseProduct();
+};
+

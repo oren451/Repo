@@ -5,8 +5,12 @@
  *      Author: orenk
  */
 #pragma once
+#include "ShelfRow.h"
+#include "Product.h"
+#include "FarmProduct.h"
 
-class FruitProduct: public FarmProduct {
+class FruitProduct: public FarmProduct
+{
 
 private:
 	int mSugarAmount;
@@ -14,11 +18,10 @@ private:
 public:
 	FruitProduct();
 	FruitProduct(char* name, int id, ShelfRow place, int weight,
-			ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
-			,int seasonsnumber, int sugarAmount);
+			ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype,
+			int seasonsnumber, int sugarAmount);
 	virtual ~FruitProduct();
 	virtual int calculatePrice();
 	virtual void print();
-
 };
 

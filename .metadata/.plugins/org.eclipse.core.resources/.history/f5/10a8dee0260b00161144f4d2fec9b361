@@ -1,0 +1,14 @@
+/*
+ * NonMilkyProduct.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+
+#pragma once
+
+class NonMilkyProduct: public MilkProduct {
+public:
+	NonMilkyProduct();
+	virtual ~NonMilkyProduct();
+};
