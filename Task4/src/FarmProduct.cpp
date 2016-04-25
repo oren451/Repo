@@ -1,5 +1,6 @@
 #include "Product.h"
 #include "FarmProduct.h"
+#include "string.h"
 #include "iostream"
 
 using namespace std;
@@ -13,8 +14,10 @@ FarmProduct::FarmProduct(): Product()
 
 FarmProduct::FarmProduct(char* name, int id, ShelfRow place, int weight,
 		ProductType type, ExposureValue exposure,int supplierNumber,FarmType farmtype
-		, int seasonsnumber): Product(name, id, place, weight, type, exposure)
+		, int seasonsnumber): Product(id, place, weight, type, exposure)
 {
+	mName = NULL;
+	strcpy(mName, name);
 	mFarmType = farmtype;
 	mSeasonsNumber = seasonsnumber;
 	mSuppliersAmount = supplierNumber;

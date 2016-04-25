@@ -11,6 +11,7 @@ enum FarmType { Fruit, Vegtable };
 class FarmProduct: public Product
 {
 private:
+	char* mName;
 	int mSuppliersAmount;
 	FarmType mFarmType;
 	int mSeasonsNumber;

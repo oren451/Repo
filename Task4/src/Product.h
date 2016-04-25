@@ -14,7 +14,6 @@ enum ExposureValue { Low, Medium, High };
 class Product {
 
 protected:
-	char* mName;
 	int mId;
 	ShelfRow mPlace;
 	int mWeight;
@@ -23,7 +22,7 @@ protected:
 
 public:
 	Product();
-	Product(char* name, int id, ShelfRow place, int weight, ProductType type, ExposureValue exposure);
+	Product(int id, ShelfRow place, int weight, ProductType type, ExposureValue exposure);
 	virtual ~Product();
 	virtual int calculatePrice() = 0;
 	virtual void print();

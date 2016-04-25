@@ -1,14 +1,20 @@
-/*
- * PackageProduct.h
- *
- *  Created on: Apr 21, 2016
- *      Author: orenk
- */
 #pragma once
 
-using namespace std;
-class PackageProduct {
+class PackageProduct: public Product
+{
+private:
+
+	int mAmount;
+	char* mProductsNamesList[];
+	int mColorCount;
+
 public:
+
 	PackageProduct();
+	PackageProduct(int id, ShelfRow place, int weight, ProductType type, ExposureValue exposure,
+			int amount, char* productNamesList, int colorcount);
 	virtual ~PackageProduct();
-};
+	virtual int calculatePrice();
+	virtual void print();
+}
+
