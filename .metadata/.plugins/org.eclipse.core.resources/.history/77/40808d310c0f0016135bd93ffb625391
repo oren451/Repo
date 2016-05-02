@@ -1,0 +1,38 @@
+/*
+ * MilkyCheeseProduct.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "MilkProduct.h"
+#include "MilkyCheeseProduct.h"
+#include "Product.h"
+
+using namespace std;
+
+MilkyCheeseProduct::MilkyCheeseProduct(): MilkProduct() {
+
+	mAddition = 0;
+}
+
+MilkyCheeseProduct::~MilkyCheeseProduct() {
+}
+
+MilkyCheeseProduct::MilkyCheeseProduct(int id, ShelfRow place,
+		int weight, ProductType type, ExposureValue exposure,char* name, int fat,
+		MilkType milktype, int colorcount, int addition)
+		:MilkProduct(name, id, place, weight, type, exposure, fat, milktype, colorcount)
+{
+	mAddition = addition;
+}
+
+int MilkyCheeseProduct::calculatePrice() {
+
+	return MilkProduct::calculatePrice() + mAddition;
+}
+
+void MilkyCheeseProduct::print() {
+
+	MilkProduct::print();
+	cout << " (" << mAddition << ")" << endl;
+}

@@ -7,11 +7,11 @@
 		<item value="true" key="ShowStatusLine"/>
 		<item value="false" key="ShowDerived"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Task4/src/Product.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4/src/Product.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4/src/FarmProduct.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala4/FarmProduct.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala4/FruitProduct.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala4/FruitProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala4/FarmProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4/src/FarmProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4/src/FruitProduct.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Task4New.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Store.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/FruitProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
-			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="620" key="DIALOG_WIDTH"/>
 			<item value="53" key="DIALOG_Y_ORIGIN"/>
-			<item value="444" key="DIALOG_HEIGHT"/>
+			<item value="408" key="DIALOG_HEIGHT"/>
 			<item value="350" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
@@ -37,10 +37,10 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="CleanDialogSettings">
-		<item value="583" key="DIALOG_WIDTH"/>
+		<item value="603" key="DIALOG_WIDTH"/>
 		<item value="166" key="DIALOG_Y_ORIGIN"/>
 		<item value="434" key="DIALOG_X_ORIGIN"/>
-		<item value="393" key="DIALOG_HEIGHT"/>
+		<item value="413" key="DIALOG_HEIGHT"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>

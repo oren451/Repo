@@ -1,0 +1,33 @@
+//============================================================================
+// Name        : Task4.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include "Store.h"
+#include "iostream"
+
+using namespace std;
+
+public static int UINT = 0;
+
+int main(int argc, char **argv) {
+
+	Store myStore = new Store("SuperShop", 3, 0, 0);
+	Store newStore;
+
+	cout << myStore << endl;
+		ofstream outFile("supermarketInfoBin.bin",ios::binary|ios::out);
+		myStore.saveBin(outFile);
+		outFile.close();
+
+		ifstream inFile("supermarketInfoBin.bin",ios::binary|ios::in);
+		inFile >> mySupertwo;
+		inFile.close();
+
+		cout << mySupertwo;
+}
+
+
+

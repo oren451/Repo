@@ -1,0 +1,76 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "Product.h"
+#include "iostream"
+
+using namespace std;
+
+Product::Product()
+{
+	mId = 0;
+	mPlace();
+	mExposure = Low;
+	mType = NULL;
+	mWeight = 0;
+}
+
+Product::Product(int id,
+		ShelfRow place, int weight, ProductType type, ExposureValue exposure)
+{
+	mId = id;
+	mPlace = place;
+	mType = type;
+	mExposure = exposure;
+	mWeight = weight;
+}
+
+void Product::print()
+{
+	cout << mPlace.print() << " (" << mType << "," << mWeight << "," << mExposure << ") "
+			<< mId << endl;
+}
+
+Product::~Product() {
+}
+
+void Product::write(ostream& out) const
+{
+	out << "ID: " << mId << endl;
+	out << "TYPE: " << mType << endl;
+	out << "PLACE: " << mPlace.getRow() << "," << mPlace.getShelf() << endl;
+	out << "WEIGHT: " << mWeight << endl;
+	out << "EXPOSURE: " << mExposure << endl;
+}
+
+void Product::save(ofstream & out) const
+{
+	out << m_name << " ";
+	out << m_price << " ";
+}
+
+void Product::load(ifstream & in)
+{
+	in >> m_name >> m_price;
+}
+
+void Product::saveBin(ofstream & out) const
+{
+	int len = m_name.length();
+	out.write((char*)&len, sizeof(len));
+	out.write((char*)&m_name[0], len);
+	out.write((char*)&m_price, sizeof(m_price));
+}
+
+void Product::loadBin(ifstream & in)
+{
+	int len;
+	in.read((char*)&len, sizeof(len));
+	m_name.resize(len);
+	in.read((char*)&m_name[0], len);
+	in.read((char*)&m_price, sizeof(m_price));
+}
+

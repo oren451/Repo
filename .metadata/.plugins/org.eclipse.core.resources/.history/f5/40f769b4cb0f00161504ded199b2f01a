@@ -1,0 +1,27 @@
+/*
+ * ShelfRow.h
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+
+class ShelfRow {
+
+private:
+	const int mShelf;
+	const char mRow;
+
+public:
+	ShelfRow(int shelf, char row);
+	virtual ~ShelfRow();
+	void print() const;
+
+	char getRow() const {
+		return mRow;
+	}
+
+	int getShelf() const {
+		return mShelf;
+	}
+};

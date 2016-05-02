@@ -1,0 +1,46 @@
+//============================================================================
+// Name        : Task4.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include "Store.h"
+#include "fstream"
+#include "iostream"
+#include "MilkyCheeseProduct.h"
+#include "FruitProduct.h"
+
+using namespace std;
+
+static int UINT = 0;
+
+int main(int argc, char **argv) {
+
+	MilkyCheeseProduct mMilkyCheeseProduct = new MilkyCheeseProduct(UINT++, new ShelfRow(5,'A')
+				,10, MilkProduct, Medium, "Shoko", 2, Cheese, 5, 2);
+
+	mMilkyCheeseProduct.print();
+
+	FruitProduct mFruitProduct = new FruitProduct("MishMish",UINT++, new ShelfRow(5,'A')
+					,10, FarmProduct, Medium, 4, Fruit, 3, 65);
+
+	mFruitProduct.print();
+
+	Store myStore = new Store("SuperShop", 3, 0, 0);
+	Store newStore;
+
+	cout << myStore << endl;
+	ofstream outFile("MyStoreInfoBin.bin", ios::binary|ios::out);
+	myStore.saveBin(outFile);
+	outFile.close();
+
+	ifstream inFile("MyStoreInfoBin.bin",ios::binary|ios::in);
+	newStore.loadBin(inFile);
+	inFile.close();
+
+	cout << newStore;
+}
+
+
+

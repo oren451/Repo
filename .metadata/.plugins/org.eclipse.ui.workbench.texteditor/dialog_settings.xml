@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
-		<item value="96" key="DIALOG_Y_ORIGIN"/>
-		<item value="495" key="DIALOG_X_ORIGIN"/>
-		<item value="408" key="DIALOG_HEIGHT"/>
+		<item value="101" key="DIALOG_Y_ORIGIN"/>
+		<item value="641" key="DIALOG_X_ORIGIN"/>
+		<item value="464" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,16 +13,26 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="SIZE" key="selection"/>
+		<item value="OtherMilkProduct" key="selection"/>
 		<list key="findhistory">
-			<item value="5"/>
-			<item value="flow"/>
-			<item value="NumSet::"/>
-			<item value="~"/>
+			<item value="NonMilkyProduct"/>
+			<item value="MilkyCheeseProduct"/>
+			<item value="mSugarAmount"/>
+			<item value="FruitProduct"/>
+			<item value=" Product"/>
+			<item value="mSeasonsNumber"/>
+			<item value="mFarmType"/>
+			<item value="mSuppliersAmount"/>
 		</list>
 		<list key="replacehistory">
-			<item value="SIZE"/>
-			<item value=""/>
+			<item value="OtherMilkProduct"/>
+			<item value="CheeseProduct"/>
+			<item value="mAmountOfNonMilkAdditions"/>
+			<item value="NonMilkyProduct"/>
+			<item value="mVitaminAmount"/>
+			<item value="VegtableProduct"/>
+			<item value=" FruitProduct"/>
+			<item value="mColorCount"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : Task4New.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include "FruitProduct.h"
+#include "VegtableProduct.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
+	FruitProduct fruit("banana", 1, 1, 'a', 4, FarmProduct, Low, 2, frui)
+
+	return 0;
+}

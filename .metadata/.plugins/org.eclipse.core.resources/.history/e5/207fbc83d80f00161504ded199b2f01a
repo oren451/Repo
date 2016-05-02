@@ -1,0 +1,39 @@
+#include "PackageProduct.h"
+#include "Product.h"
+#include "iostream"
+
+using namespace std;
+
+PackageProduct::PackageProduct(int id, int shelf, char row, int weight, ExposureValue exposure,
+		int amount, const string* productNamesList, int colorcount)
+	:Product(id, shelf, row, weight, type, exposure)
+{
+	mAmount = amount;
+	mColorCount = colorcount;
+	mProductsNamesList = productNamesList;
+}
+
+PackageProduct::~PackageProduct()
+{
+	delete[] mProductsNamesList;
+}
+
+int PackageProduct::calculatePrice()
+{
+	return mAmount + (mColorCount / 3);
+}
+
+void PackageProduct::print()
+{
+	Product::print();
+
+	cout << "( " << endl;
+	for(char* str = mProductsNamesList; str < mProductsNamesList + (sizeof(mProductsNamesList) / sizeof(*mProductsNamesList)); ++str)
+	{
+		cout << str << "," << endl;
+	}
+
+	cout << "(" << mAmount << "," << mColorCount << ")" << endl;
+
+}
+

@@ -3,6 +3,8 @@
 	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
 	<section name="completion_proposal_size">
+		<item value="326" key="size.x"/>
+		<item value="234" key="size.y"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NewBaseClassSelectionDialogSettings">
 		<item value="true" key="show_structs"/>
@@ -34,6 +36,13 @@
 	<section name="RenameInformationPopup">
 	</section>
 	<section name="CRenameRefactoringInputPage">
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="444" key="DIALOG_WIDTH"/>
+		<item value="63" key="DIALOG_Y_ORIGIN"/>
+		<item value="428" key="DIALOG_X_ORIGIN"/>
+		<item value="485" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NamespaceSelectionDialogSettings">
 		<item value="false" key="show_structs"/>

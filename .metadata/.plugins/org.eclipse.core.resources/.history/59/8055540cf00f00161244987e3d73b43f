@@ -1,0 +1,78 @@
+/*
+ * Store.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#include "Store.h"
+#include "FruitProduct.h"
+#include "VegtableProduct.h"
+#include "CheeseProduct.h"
+#include "OtherMilkProduct.h"
+#include "PackageProduct.h"
+#include <typeinfo>
+
+using namespace std;
+
+Store::~Store() {
+}
+
+Store::Store(const string& storeName, int factor, int productsAmount, const Product* allProductArray):
+							mStoreName(storeName),
+							mFactor(factor),
+							mAllProductArray()
+{
+	for(int i = 0;i < productsAmount; ++i)
+	{
+		addProductToStore(allProductArray[i]);
+	}
+}
+
+void Store::addProductToStore(const Product& product) {
+
+	if(typeid(product) == typeid(FruitProduct))
+	{
+		mAllProductArray.push_back(dynamic_cast<FruitProduct&>(const_cast<Product&>(product));
+	}
+	else if(typeid(product) == typeid(VegtableProduct))
+	{
+		//mAllProductArray.push_back(dynamic_cast<VegtableProduct>(product));
+	}
+	else if(typeid(product) == typeid(OtherMilkProduct))
+	{
+		//mAllProductArray.push_back(static_cast<OtherMilkProduct>(product));
+	}
+	else if(typeid(product) == typeid(CheeseProduct))
+	{
+		//mAllProductArray.push_back(static_cast<CheeseProduct>(product));
+	}
+	else if(typeid(product) == typeid(PackageProduct))
+	{
+		//mAllProductArray.push_back(static_cast<PackageProduct>(product));
+	}
+	else
+	{
+		throw "Wrong type";
+	}
+}
+
+int Store::calculateStoreValue() const{
+
+	int summery = 0;
+	for(int i = 0;i < (int)mAllProductArray.size(); ++i)
+	{
+		summery += mAllProductArray[i].calculatePrice();
+	}
+
+	return summery;
+}
+
+void Store::printStoreDetails() const{
+
+	cout << "Store Details Are:" << endl;
+	for(int i = 0;i < (int)mAllProductArray.size(); ++i)
+	{
+		mAllProductArray[i].print();
+	}
+}
+

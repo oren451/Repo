@@ -1,76 +1,13 @@
-00:08:13 **** Incremental Build of configuration Debug for project Task4 ****
+20:55:40 **** Incremental Build of configuration Debug for project Task4 ****
 make all 
-Building file: ../src/FarmProduct.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FarmProduct.d" -MT"src/FarmProduct.d" -o "src/FarmProduct.o" "../src/FarmProduct.cpp"
-Finished building: ../src/FarmProduct.cpp
- 
-Building file: ../src/FruitProduct.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FruitProduct.d" -MT"src/FruitProduct.d" -o "src/FruitProduct.o" "../src/FruitProduct.cpp"
-../src/FruitProduct.cpp: In member function ‘virtual void FruitProduct::print()’:
-../src/FruitProduct.cpp:26:2: warning: label ‘FarmProduct’ defined but not used [-Wunused-label]
-  FarmProduct:print();
-  ^
-Finished building: ../src/FruitProduct.cpp
- 
-Building file: ../src/MilkProduct.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MilkProduct.d" -MT"src/MilkProduct.d" -o "src/MilkProduct.o" "../src/MilkProduct.cpp"
-../src/MilkProduct.cpp:11:1: error: ‘MilkProduct’ does not name a type
- MilkProduct::MilkProduct(): Product() {
- ^
-../src/MilkProduct.cpp:20:1: error: ‘MilkProduct’ does not name a type
- MilkProduct::~MilkProduct() {
-src/subdir.mk:54: recipe for target 'src/MilkProduct.o' failed
- ^
-../src/MilkProduct.cpp:23:1: error: ‘MilkProduct’ does not name a type
- MilkProduct::MilkProduct(char* name, int id, ShelfRow place, int weight,
- ^
-../src/MilkProduct.cpp:34:5: error: ‘MilkProduct’ is not a class or namespace
- int MilkProduct::calculatePrice() {
-     ^
-../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
-../src/MilkProduct.cpp:36:10: error: ‘mColorCount’ was not declared in this scope
-  return (mColorCount - mFat) * mMilkType;
-          ^
-../src/MilkProduct.cpp:36:24: error: ‘mFat’ was not declared in this scope
-  return (mColorCount - mFat) * mMilkType;
-                        ^
-../src/MilkProduct.cpp:36:32: error: ‘mMilkType’ was not declared in this scope
-  return (mColorCount - mFat) * mMilkType;
-                                ^
-../src/MilkProduct.cpp: At global scope:
-../src/MilkProduct.cpp:39:6: error: ‘MilkProduct’ is not a class or namespace
- void MilkProduct::print() {
-      ^
-../src/MilkProduct.cpp: In function ‘void print()’:
-../src/MilkProduct.cpp:41:17: error: cannot call member function ‘virtual void Product::print()’ without object
-  Product::print();
-                 ^
-../src/MilkProduct.cpp:42:2: error: ‘cout’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-  ^
-../src/MilkProduct.cpp:42:10: error: ‘mName’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-          ^
-../src/MilkProduct.cpp:42:27: error: ‘mMilkType’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-                           ^
-../src/MilkProduct.cpp:42:47: error: ‘mColorCount’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-                                               ^
-../src/MilkProduct.cpp:42:69: error: ‘mFat’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-                                                                     ^
-../src/MilkProduct.cpp:42:84: error: ‘endl’ was not declared in this scope
-  cout << mName << " (" << mMilkType << "," << mColorCount << "," << mFat << ")" << endl;
-                                                                                    ^
-../src/MilkProduct.cpp: In function ‘int calculatePrice()’:
-../src/MilkProduct.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-make: *** [src/MilkProduct.o] Error 1
+Building target: Task4
+Invoking: GCC C++ Linker
+g++  -o "Task4"  ./src/FarmProduct.o ./src/FruitProduct.o ./src/MilkProduct.o ./src/MilkyCheeseProduct.o ./src/NonMilkyProduct.o ./src/PackageProduct.o ./src/Product.o ./src/ShelfRow.o ./src/Store.o ./src/VegtableProduct.o   
+/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+/build/buildd/glibc-2.21/csu/../sysdeps/x86_64/start.S:114: undefined reference to `main'
+makefile:45: recipe for target 'Task4' failed
+collect2: error: ld returned 1 exit status
+make: *** [Task4] Error 1
 
-00:08:14 Build Finished (took 687ms)
+20:55:40 Build Finished (took 118ms)
 

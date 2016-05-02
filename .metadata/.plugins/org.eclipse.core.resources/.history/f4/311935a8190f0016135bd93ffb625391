@@ -1,0 +1,11 @@
+src/MilkyCheeseProduct.d: ../src/MilkyCheeseProduct.cpp \
+ ../src/MilkyCheeseProduct.h ../src/MilkProduct.h ../src/Product.h \
+ ../src/ShelfRow.h
+
+../src/MilkyCheeseProduct.h:
+
+../src/MilkProduct.h:
+
+../src/Product.h:
+
+../src/ShelfRow.h:

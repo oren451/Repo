@@ -1,0 +1,98 @@
+/*
+ * Store.cpp
+ *
+ *  Created on: Apr 21, 2016
+ *      Author: orenk
+ */
+#pragma once
+/*
+using namespace std;
+
+Store::Store()
+{
+	mFactor = 0;
+	mProductsAmount = 0;
+	mAllProductArray = 0; //NULL
+	mStoreName = new char[7];
+	strcpy(mStoreName, "Default");
+}
+
+Store::~Store() {
+}
+
+Store::Store(char* storeName, int factor, int productsAmount,
+		Product* allProductArray[])
+{
+	mFactor = factor;
+	mAllProductArray = new Product*[]
+	for(int i = 0;i < mProductsAmount; ++i)
+	{
+		addProductToStore(&mAllProductArray[i]);
+	}
+
+	mProductsAmount = productsAmount;
+}
+
+void Store::addProductToStore(Product &product) {
+
+	int currentLength;
+	if(typeid(*product) == typeid(FruitProduct))
+	{
+		mAllProductArray[currentLength] = dynamic_cast<FruitProduct>(product);
+	}
+	else if(typeid(*product) == typeid(VegtableProduct))
+	{
+		mAllProductArray[currentLength] = dynamic_cast<VegtableProduct>(product);
+	}
+	else if(typeid(*product) == typeid(NonMilkyProduct))
+	{
+		mAllProductArray[currentLength] = dynamic_cast<NonMilkyProduct>(product);
+	}
+	else if(typeid(*product) == typeid(MilkyCheeseProduct))
+	{
+		mAllProductArray[currentLength] = dynamic_cast<MilkyCheeseProduct>(product);
+	}
+	else
+	{
+		throw "Wrong type";
+	}
+
+	mProductsAmount++;
+}
+
+int Store::calculateStoreValue() {
+
+	int summery = 0;
+	for(int i = 0;i < mProductsAmount; ++i)
+	{
+		if(typeid(mAllProductArray[i]) == typeid(FruitProduct))
+		{
+			summery += (FruitProduct)mAllProductArray[i]->calculatePrice();
+		}
+		else if(typeid(mAllProductArray[i]) == typeid(VegtableProduct))
+		{
+			summery += (VegtableProduct)mAllProductArray[i]->calculatePrice();
+		}
+		else if(typeid(mAllProductArray[i]) == typeid(NonMilkyProduct))
+		{
+			summery += (NonMilkyProduct)mAllProductArray[i]->calculatePrice();
+		}
+		else if(typeid(mAllProductArray[i]) == typeid(MilkyCheeseProduct))
+		{
+			summery += (MilkyCheeseProduct)mAllProductArray[i]->calculatePrice();
+		}
+		else
+		{
+			summery += (MilkProduct)mAllProductArray[i]->calculatePrice();
+		}
+	}
+
+	return summery;
+}
+
+void Store::printStoreDetails() {
+
+	cout << "Store Details Are:" << endl;
+	//cout <<
+}
+*/
