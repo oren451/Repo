@@ -9,3 +9,6 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Birds.d" -MT"Birds.d" -o "B
   ^
 subdir.mk:45: recipe for target 'Birds.o' failed
 make: *** [Birds.o] Error 1
+
+22:57:51 Build Finished (took 164ms)
+

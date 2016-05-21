@@ -1,6 +1,7 @@
-03:15:32 **** Incremental Build of configuration Debug for project Task4New ****
-make all 
-make: Nothing to be done for 'all'.
+21:39:47 **** Clean-only build of configuration Debug for project Task4New ****
+make clean 
+rm -rf  ./src/CheeseProduct.o ./src/FarmProduct.o ./src/FruitProduct.o ./src/MilkProduct.o ./src/OtherMilkProduct.o ./src/PackageProduct.o ./src/Product.o ./src/Store.o ./src/Task4New.o ./src/VegtableProduct.o  ./src/CheeseProduct.d ./src/FarmProduct.d ./src/FruitProduct.d ./src/MilkProduct.d ./src/OtherMilkProduct.d ./src/PackageProduct.d ./src/Product.d ./src/Store.d ./src/Task4New.d ./src/VegtableProduct.d  Task4New
+ 
 
-03:15:32 Build Finished (took 68ms)
+21:39:47 Build Finished (took 70ms)
 

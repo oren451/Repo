@@ -4,15 +4,15 @@
 		<item value="/home/orenk/ProductionCode/Repo" key="OUTSIDE_LOCATION"/>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
 		<item value="false" key="ShowDerived"/>
+		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Task4New.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Store.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/FruitProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Task4New.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/FruitProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Animal.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Animal.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Store.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mammals.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Birds.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Flamingo.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/GoldFish.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Horses.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Horses.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mermaid.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mermaid.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
-			<item value="620" key="DIALOG_WIDTH"/>
+			<item value="660" key="DIALOG_WIDTH"/>
 			<item value="53" key="DIALOG_Y_ORIGIN"/>
-			<item value="408" key="DIALOG_HEIGHT"/>
 			<item value="350" key="DIALOG_X_ORIGIN"/>
+			<item value="476" key="DIALOG_HEIGHT"/>
 			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -30,17 +30,17 @@
 	<section name="SaveAsDialogSettings">
 		<item value="613" key="DIALOG_WIDTH"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="596" key="DIALOG_HEIGHT"/>
 		<item value="344" key="DIALOG_X_ORIGIN"/>
+		<item value="596" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 	<section name="CleanDialogSettings">
 		<item value="603" key="DIALOG_WIDTH"/>
 		<item value="166" key="DIALOG_Y_ORIGIN"/>
-		<item value="434" key="DIALOG_X_ORIGIN"/>
 		<item value="413" key="DIALOG_HEIGHT"/>
+		<item value="434" key="DIALOG_X_ORIGIN"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

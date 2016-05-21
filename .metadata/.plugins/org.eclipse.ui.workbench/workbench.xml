@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="715" maximized="true" width="1018" x="125" y="373">
+<window height="658" maximized="true" width="1012" x="1421" y="113">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -14,7 +14,7 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="316" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="143" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="137" y="30"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
@@ -32,58 +32,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="OtherMilkProduct.h" partName="OtherMilkProduct.h" path="/home/orenk/ProductionCode/Task4New/src/OtherMilkProduct.h" title="OtherMilkProduct.h" tooltip="Task4New/src/OtherMilkProduct.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/OtherMilkProduct.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="379" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CheeseProduct.h" partName="CheeseProduct.h" path="/home/orenk/ProductionCode/Task4New/src/CheeseProduct.h" title="CheeseProduct.h" tooltip="Task4New/src/CheeseProduct.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/CheeseProduct.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="335" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CheeseProduct.cpp" partName="CheeseProduct.cpp" path="/home/orenk/ProductionCode/Task4New/src/CheeseProduct.cpp" title="CheeseProduct.cpp" tooltip="Task4New/src/CheeseProduct.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/CheeseProduct.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="313" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Store.cpp" partName="Store.cpp" path="/home/orenk/ProductionCode/Task4New/src/Store.cpp" title="Store.cpp" tooltip="Task4New/src/Store.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/Store.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="1439" selectionTopPixel="615"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Store.h" partName="Store.h" path="/home/orenk/ProductionCode/Task4New/src/Store.h" title="Store.h" tooltip="Task4New/src/Store.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/Store.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="176" selectionTopPixel="136"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FruitProduct.h" partName="FruitProduct.h" path="/home/orenk/ProductionCode/Task4New/src/FruitProduct.h" title="FruitProduct.h" tooltip="Task4New/src/FruitProduct.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/FruitProduct.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="20" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="FarmProduct.h" partName="FarmProduct.h" path="/home/orenk/ProductionCode/Task4New/src/FarmProduct.h" title="FarmProduct.h" tooltip="Task4New/src/FarmProduct.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/FarmProduct.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="188" selectionTopPixel="11"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FruitProduct.cpp" partName="FruitProduct.cpp" path="/home/orenk/ProductionCode/Task4New/src/FruitProduct.cpp" title="FruitProduct.cpp" tooltip="Task4New/src/FruitProduct.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/FruitProduct.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="856" selectionTopPixel="344"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Product.cpp" partName="Product.cpp" path="/home/orenk/ProductionCode/Task4New/src/Product.cpp" title="Product.cpp" tooltip="Task4New/src/Product.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/Product.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="591" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MilkProduct.cpp" partName="MilkProduct.cpp" path="/home/orenk/ProductionCode/Task4New/src/MilkProduct.cpp" title="MilkProduct.cpp" tooltip="Task4New/src/MilkProduct.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task4New/src/MilkProduct.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Birds.cpp" partName="Birds.cpp" path="/home/orenk/ProductionCode/Matala5/Birds.cpp" title="Birds.cpp" tooltip="Matala5/Birds.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Matala5/Birds.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="465" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -102,7 +57,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="308" org.eclipse.ui.ide.markerType="380" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="732"/>
@@ -139,7 +93,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -256,9 +210,9 @@
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.cdt.ui.typeHierarchy"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <fastViewBars/>
@@ -424,164 +378,175 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/Store.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/Product.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/Product.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/FarmProduct.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/FruitProduct.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/FarmProduct.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/MilkProduct.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task4New/src/FruitProduct.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/GoldFish.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Mermaid.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Animal.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Birds.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Fish.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Flamingo.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/GoldFish.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Horses.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Mammals.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Mermaid.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Animal.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Mammals.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Birds.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Fish.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Flamingo.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Horses.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Matala5/Debug/subdir.mk"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Horses.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Matala5/Birds.cpp"/>
 </editors>
-<item historyLabel="Product.h" index="1">
-<position/>
+<item historyLabel="Mermaid.cpp" index="1">
+<position info="not_deleted" x="781" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position/>
+<item historyLabel="Animal.h" index="2">
+<position info="not_deleted" x="471" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="430" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="368" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="284" y="0"/>
-</item>
-<item historyLabel="FarmProduct.h" index="3">
-<position info="not_deleted" x="225" y="7"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="284" y="0"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="368" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="FruitProduct.cpp" index="4">
+<item historyLabel="Animal.cpp" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FarmProduct.h" index="3">
-<position info="not_deleted" x="225" y="7"/>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="699" y="0"/>
 </item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="368" y="0"/>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="623" y="0"/>
 </item>
-<item historyLabel="MilkProduct.cpp" index="6">
+<item historyLabel="Mammals.h" index="8">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="Mammals.cpp" index="11">
+<position info="not_deleted" x="695" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="Mammals.h" index="8">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="Mermaid.cpp" index="1">
+<position info="not_deleted" x="781" y="0"/>
+</item>
+<item historyLabel="Mammals.h" index="8">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="Animal.h" index="2">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="Animal.h" index="2">
+<position info="not_deleted" x="482" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="699" y="0"/>
+</item>
+<item historyLabel="Mammals.h" index="8">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="Mammals.cpp" index="11">
+<position info="not_deleted" x="694" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="Birds.h" index="3">
+<position info="not_deleted" x="420" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="Fish.h" index="4">
+<position info="not_deleted" x="461" y="0"/>
+</item>
+<item historyLabel="Fish.cpp" index="13">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="Flamingo.h" index="5">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Fish.h" index="4">
+<position info="not_deleted" x="461" y="0"/>
+</item>
+<item historyLabel="Flamingo.h" index="5">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Flamingo.cpp" index="14">
+<position info="not_deleted" x="592" y="0"/>
+</item>
+<item historyLabel="GoldFish.cpp" index="0">
 <position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="398" y="0"/>
+<item historyLabel="GoldFish.h" index="6">
+<position info="not_deleted" x="516" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="284" y="0"/>
+<item historyLabel="GoldFish.cpp" index="0">
+<position info="not_deleted" x="912" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="559" y="14"/>
+<item historyLabel="Horses.h" index="7">
+<position info="not_deleted" x="507" y="0"/>
 </item>
-<item historyLabel="Store.cpp" index="0">
-<position info="not_deleted" x="1439" y="14"/>
+<item historyLabel="Horses.cpp" index="15">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="398" y="0"/>
+<item historyLabel="Horses.cpp" index="15">
+<position info="not_deleted" x="597" y="0"/>
 </item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position/>
+<item historyLabel="Mermaid.h" index="9">
+<position info="not_deleted" x="660" y="0"/>
 </item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="398" y="0"/>
+<item historyLabel="Mermaid.cpp" index="1">
+<position info="not_deleted" x="774" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="559" y="14"/>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="94" y="0"/>
 </item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position info="not_deleted" x="545" y="0"/>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="698" y="0"/>
 </item>
-<item historyLabel="MilkProduct.cpp" index="6">
+<item historyLabel="Animal.h" index="2">
+<position info="not_deleted" x="482" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="Animal.cpp" index="10">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="Birds.h" index="3">
+<position info="not_deleted" x="420" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="subdir.mk" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Birds.cpp" index="12">
+<position info="not_deleted" x="442" y="0"/>
+</item>
+<item historyLabel="Horses.cpp" index="17">
 <position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="398" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="547" y="39"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="547" y="39"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="303" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position info="not_deleted" x="740" y="0"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="292" y="0"/>
-</item>
-<item historyLabel="MilkProduct.cpp" index="6">
-<position info="not_deleted" x="3" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="292" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position info="not_deleted" x="740" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="292" y="0"/>
-</item>
-<item historyLabel="Product.cpp" index="2">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Product.h" index="1">
-<position info="not_deleted" x="364" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position info="not_deleted" x="740" y="0"/>
-</item>
-<item historyLabel="FarmProduct.h" index="3">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="FarmProduct.cpp" index="5">
-<position info="not_deleted" x="740" y="0"/>
-</item>
-<item historyLabel="FruitProduct.h" index="7">
-<position info="not_deleted" x="423" y="0"/>
-</item>
-<item historyLabel="FruitProduct.cpp" index="4">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="FruitProduct.h" index="7">
-<position info="not_deleted" x="20" y="0"/>
-</item>
-<item historyLabel="FarmProduct.h" index="3">
-<position info="not_deleted" x="224" y="0"/>
-</item>
-<item historyLabel="FruitProduct.cpp" index="4">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="FruitProduct.h" index="7">
-<position info="not_deleted" x="20" y="0"/>
-</item>
-<item active="true" historyLabel="FarmProduct.h" index="3">
-<position info="not_deleted" x="224" y="0"/>
+<item active="true" historyLabel="Birds.cpp" index="18">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -595,7 +560,6 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="topRight"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -608,50 +572,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MilkProduct.cpp" tooltip="Task4New/src/MilkProduct.cpp">
-<persistable path="/Task4New/src/MilkProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Birds.cpp" tooltip="Matala5/Birds.cpp">
+<persistable path="/Matala5/Birds.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Product.h" tooltip="Task4New/src/Product.h">
-<persistable path="/Task4New/src/Product.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Horses.cpp" tooltip="Matala5/Horses.cpp">
+<persistable path="/Matala5/Horses.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Product.cpp" tooltip="Task4New/src/Product.cpp">
-<persistable path="/Task4New/src/Product.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="Matala5/Debug/subdir.mk">
+<persistable path="/Matala5/Debug/subdir.mk"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FarmProduct.cpp" tooltip="Task4New/src/FarmProduct.cpp">
-<persistable path="/Task4New/src/FarmProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GoldFish.cpp" tooltip="Matala5/GoldFish.cpp">
+<persistable path="/Matala5/GoldFish.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FruitProduct.cpp" tooltip="Task4New/src/FruitProduct.cpp">
-<persistable path="/Task4New/src/FruitProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Flamingo.cpp" tooltip="Matala5/Flamingo.cpp">
+<persistable path="/Matala5/Flamingo.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FarmProduct.h" tooltip="Task4New/src/FarmProduct.h">
-<persistable path="/Task4New/src/FarmProduct.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Fish.cpp" tooltip="Matala5/Fish.cpp">
+<persistable path="/Matala5/Fish.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FruitProduct.h" tooltip="Task4New/src/FruitProduct.h">
-<persistable path="/Task4New/src/FruitProduct.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Mammals.cpp" tooltip="Matala5/Mammals.cpp">
+<persistable path="/Matala5/Mammals.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Store.h" tooltip="Task4New/src/Store.h">
-<persistable path="/Task4New/src/Store.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Animal.cpp" tooltip="Matala5/Animal.cpp">
+<persistable path="/Matala5/Animal.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Store.cpp" tooltip="Task4New/src/Store.cpp">
-<persistable path="/Task4New/src/Store.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Mermaid.cpp" tooltip="Matala5/Mermaid.cpp">
+<persistable path="/Matala5/Mermaid.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PackageProduct.cpp" tooltip="Task4New/src/PackageProduct.cpp">
-<persistable path="/Task4New/src/PackageProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Mermaid.h" tooltip="Matala5/Mermaid.h">
+<persistable path="/Matala5/Mermaid.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PackageProduct.h" tooltip="Task4New/src/PackageProduct.h">
-<persistable path="/Task4New/src/PackageProduct.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Mammals.h" tooltip="Matala5/Mammals.h">
+<persistable path="/Matala5/Mammals.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CheeseProduct.cpp" tooltip="Task4New/src/CheeseProduct.cpp">
-<persistable path="/Task4New/src/CheeseProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Horses.h" tooltip="Matala5/Horses.h">
+<persistable path="/Matala5/Horses.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CheeseProduct.h" tooltip="Task4New/src/CheeseProduct.h">
-<persistable path="/Task4New/src/CheeseProduct.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GoldFish.h" tooltip="Matala5/GoldFish.h">
+<persistable path="/Matala5/GoldFish.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Task4New.cpp" tooltip="Task4New/src/Task4New.cpp">
-<persistable path="/Task4New/src/Task4New.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Flamingo.h" tooltip="Matala5/Flamingo.h">
+<persistable path="/Matala5/Flamingo.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="OtherMilkProduct.cpp" tooltip="Task4New/src/OtherMilkProduct.cpp">
-<persistable path="/Task4New/src/OtherMilkProduct.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Fish.h" tooltip="Matala5/Fish.h">
+<persistable path="/Matala5/Fish.h"/>
 </file>
 </mruList>
 </workbench>
