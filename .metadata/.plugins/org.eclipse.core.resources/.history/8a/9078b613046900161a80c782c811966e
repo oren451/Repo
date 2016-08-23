@@ -1,0 +1,11 @@
+package algorithms.search;
+
+import algorithms.mazeGenerators.Position;
+
+public class PositionState extends State<Position> {
+
+	public PositionState(Position p) {
+		super(p.toString());
+		this.setValue(p);
+	}
+}

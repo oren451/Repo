@@ -17,4 +17,9 @@
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="com.atm.example.StatementFactory"/>
 <fullyQualifiedTypeName name="com.atm.example.StatementType"/>
+<fullyQualifiedTypeName name="algorithms.mazeGenerators.GrowingTreeGenerator"/>
+<fullyQualifiedTypeName name="algorithms.mazeGenerators.RandomItemChooser"/>
+<fullyQualifiedTypeName name="algorithms.search.PositionState"/>
+<fullyQualifiedTypeName name="algorithms.search.State"/>
+<fullyQualifiedTypeName name="algorithms.mazeGenerators.Position"/>
 </qualifiedTypeNameHistroy>

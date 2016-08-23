@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="853" key="dialogWidth"/>
-		<item value="480" key="dialogHeight"/>
-		<list key="orderedProviders">
-		</list>
-		<list key="textArray">
-		</list>
-		<list key="orderedElements">
-		</list>
-		<list key="textEntries">
-		</list>
-	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="-75" key="DIALOG_Y_ORIGIN"/>
 		<item value="10" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="InstallationDialogSettings">
-		<item value="798" key="DIALOG_WIDTH"/>
-		<item value="-160" key="DIALOG_Y_ORIGIN"/>
-		<item value="724" key="DIALOG_HEIGHT"/>
-		<item value="-82" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="480" key="dialogHeight"/>
+		<item value="853" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
 	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.cdt.ui.wizards.NewCWizard1" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
@@ -29,6 +22,13 @@
 			<item value="org.eclipse.cdt.ui.newCWizards"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="798" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="724" key="DIALOG_HEIGHT"/>
+		<item value="-160" key="DIALOG_Y_ORIGIN"/>
+		<item value="-82" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

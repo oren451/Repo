@@ -1,0 +1,140 @@
+package algorithms.search;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import algorithms.mazeGenerators.Position;
+
+public class DFS<T> extends CommonSearcher<T> {
+
+	@Override
+	public Solution<T> search(Searchable<T> s) {
+	
+		//TODO : Implement DFS
+		State<T> currState = s.getGoalState();
+		LinkedList<State<T>> visitedStates = new LinkedList<State<T>>();
+		
+		if (currState.equals(s.getGoalState()))
+		{
+			return backTrace(currState, s.getStartState());
+		}
+		
+		this.visitedStates.add(currState);
+		
+		HashMap<Action,State<T>> actions = s.getAllPossibleStates(currState);
+		
+		for(State<T> neighbor: actions.values())
+		{
+			if (!this.visitedStates.contains(neighbor)) 
+			{
+				neighbor.setCameFrom(currState);
+				increaseEvaluatedNodes();
+				dfs(s, neighbor);
+			}
+		}
+		
+		return null;
+	}
+
+	
+		
+//		List<State> validNeighbors = s.getAllPossibleState(s.getStartState());
+//		
+//		while(! validNeighbors.isEmpty())
+//		{
+//			Random rand = new Random();
+//			int i = rand.nextInt(validNeighbors.size());
+//			State n = validNeighbors.get(i);
+//			validNeighbors.remove(i);
+//			//maze.createPassageBetweenNeighbors(pStart, n);
+////			if(generatePath(n, pEnd))
+////			{
+////				return true;
+////			}
+//		}
+//		
+//		maze.setValue(pStart, Maze3d.NONROUTE_SIGN);
+//		return false;
+	}
+
+/**
+ * 
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+Click here to enable desktop notifications for Gmail.   Learn more  Hide
+Oops! You are not invisible because you're logged into Google Talk from another client, device, or location that doesn't support invisibility.
+mcculloughelliot@gmail.com wants to be able to chat with you. Okay?
+Idle	Dan Yadlin
+Idle	netta kabla
+Offline	carlito111 briganta
+Offline	Inbar Karp
+Offline	Noy Oded
+Offline	טובה לבון‎
+Offline	מיה בצלאל‎
+	adasha
+	milfit35
+	Yossi Kikozashvili
+ 
+ 
+More 
+1 of 252
+ 
+DFS algorithm
+Inbox
+	x
+Yosef Kikozashvili <Yosef.Kikozashvili@ecitele.com>
+	
+Attachments11:41 PM (32 minutes ago)
+		
+to me
+
+ 
+Attachments area
+	
+Click here to Reply or Forward
+2.64 GB (17%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 16 minutes ago
+Details
+	
+	
+
+public Solution search(Searchable s) {
+		
+		dfs(s, s.getStartState());
+		return this.solution;
+		
+	}
+
+
+private void dfs(Searchable s, State currState) 
+	{
+		
+		if (currState.equals(s.getGoalState()))
+		{
+			this.solution = backtrack(currState);
+			return;
+		}
+		
+		this.visitedStates.add(currState);
+		
+		HashMap<Action,State> actions = s.getAllPossibleActions(currState);
+		for(State neighbor: actions.values())
+		{
+			if (!this.visitedStates.contains(neighbor)) 
+			{
+				neighbor.setCameFrom(currState);
+				increaseEvaluatedNodes();
+				dfs(s, neighbor);
+			}
+		}
+		return;
+	}
+
+dfs.txt
+Displaying dfs.txt.
+ */
+**/

@@ -1,0 +1,59 @@
+package algorithms.search;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import algorithms.mazeGenerators.Position;
+
+public class DFS<T> extends CommonSearcher<T> {
+
+	private LinkedList<State<T>> visitedStates = new LinkedList<State<T>>();
+	@Override
+	public Solution<T> search(Searchable<T> s) {
+
+		dfs(s, s.getStartState());
+		return backTrace(s.getGoalState(), s.getStartState()); 
+	}
+
+	private void dfs(Searchable<T> s, State<T> currState)
+	{
+		
+		if (currState.equals(s.getGoalState()))
+		{
+			return;
+		}
+
+		visitedStates.add(currState);
+
+		HashMap<Action,State<T>> actions = s.getAllPossibleStates(currState);
+
+		for(State<T> neighbor: actions.values())
+		{
+			if (! visitedStates.contains(neighbor)) 
+			{
+				neighbor.setCameFrom(currState);
+				increaseEvaluatedNodes();
+				dfs(s, neighbor);
+			}
+		}
+	}	
+
+	//		List<State> validNeighbors = s.getAllPossibleState(s.getStartState());
+	//		
+	//		while(! validNeighbors.isEmpty())
+	//		{
+	//			Random rand = new Random();
+	//			int i = rand.nextInt(validNeighbors.size());
+	//			State n = validNeighbors.get(i);
+	//			validNeighbors.remove(i);
+	//			//maze.createPassageBetweenNeighbors(pStart, n);
+	////			if(generatePath(n, pEnd))
+	////			{
+	////				return true;
+	////			}
+	//		}
+	//		
+	//		maze.setValue(pStart, Maze3d.NONROUTE_SIGN);
+	//		return false;
+	//	}
+

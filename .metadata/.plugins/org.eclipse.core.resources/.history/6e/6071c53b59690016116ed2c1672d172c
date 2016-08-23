@@ -1,0 +1,35 @@
+package algorithms.search;
+
+import java.util.LinkedList;
+
+public class DFS<T> extends CommonSearcher<T> {
+
+	@Override
+	public Solution<T> search(Searchable s) {
+	
+		LinkedList<State<T>> openList = new LinkedList<State<T>>();
+		
+		return null;
+	}
+
+	
+		
+//		List<State> validNeighbors = s.getAllPossibleState(s.getStartState());
+//		
+//		while(! validNeighbors.isEmpty())
+//		{
+//			Random rand = new Random();
+//			int i = rand.nextInt(validNeighbors.size());
+//			State n = validNeighbors.get(i);
+//			validNeighbors.remove(i);
+//			//maze.createPassageBetweenNeighbors(pStart, n);
+////			if(generatePath(n, pEnd))
+////			{
+////				return true;
+////			}
+//		}
+//		
+//		maze.setValue(pStart, Maze3d.NONROUTE_SIGN);
+//		return false;
+	}
+

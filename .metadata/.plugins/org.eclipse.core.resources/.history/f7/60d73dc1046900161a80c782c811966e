@@ -1,0 +1,11 @@
+package algorithms.search;
+
+import java.util.List;
+
+public interface Searchable<T extends State<?>> {
+	
+	State<?> getStartState();
+	State<?> getGoalState();
+	List<State<?>> getAllPossibleStates(State<T> s);
+	double getMoveCost(State<T> currState, State<T> neighbor);
+}
