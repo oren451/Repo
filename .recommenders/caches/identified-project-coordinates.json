@@ -1,1 +1,1 @@
-[[{"location":"/home/orenk/ProductionCode/Repo/MyAlgorithems","type":"PROJECT","hints":{"PROJECT_NAME":"MyAlgorithems"}},"ABSENT"],[{"location":"/usr/lib/jvm/java-7-openjdk-amd64","type":"JRE","hints":{}},"jre:jre:7.0.0"]]
+[[{"location":"/home/orenk/ProductionCode/Repo/MVPFinal/libs/myalgorithms.jar","type":"JAR","hints":{}},"ABSENT"],[{"location":"/usr/lib/jvm/java-8-oracle/jre","type":"JRE","hints":{}},"jre:jre:8.0.0"],[{"location":"/home/orenk/ProductionCode/Repo/MVPFinal","type":"PROJECT","hints":{"PROJECT_NAME":"MVPFinal"}},"ABSENT"]]

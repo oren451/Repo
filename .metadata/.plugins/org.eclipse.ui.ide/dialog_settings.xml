@@ -12,6 +12,10 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/orenk/ProductionCode/Repo/server"/>
+			<item value="/home/orenk/Downloads/Part D - Tomer Uzan/PC/mvp"/>
+			<item value="/home/orenk/Downloads/Part D - Tomer Uzan/MAC/MVP"/>
+			<item value="/home/orenk/ProductionCode/Repo/MVP"/>
 			<item value="/home/orenk/ProductionCode/Repo/MyAlgorithems"/>
 			<item value="/home/orenk/Eclipse_Projects/cts"/>
 		</list>
@@ -25,9 +29,10 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
 		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Task4New.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Product.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/FruitProduct.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Animal.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Animal.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Task4New/src/Store.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mammals.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Birds.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Flamingo.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/GoldFish.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Horses.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Horses.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mermaid.h&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Matala5/Mermaid.cpp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/search/BFS.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/mazeGenerators/CommonMaze3dGenerator.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/mazeGenerators/GrowingTreeGenerator.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/mazeGenerators/SimpleMaze3dGenerator.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/search/Solution.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/mazeGenerators/Maze3d.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyAlgorithems/src/algorithms/mazeGenerators/Position.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MazeMVC/src/view/MyView.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<item value="false" key="ShowDerived"/>
 		<section name="DialogBoundsSettings">
 			<item value="660" key="DIALOG_WIDTH"/>
